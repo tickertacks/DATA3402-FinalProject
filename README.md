@@ -10,9 +10,11 @@ Data set sources include:
 This project presents a data-driven framework for predicting geomagnetic storm (GST) activity using machine learning techniques through a master dataset spanning 16 years to identify and map important features and patterns within solar events preceeding geomagnetic storms on a continuous time scale to complement geomagnetically induced current (GIC) models.
 
 Within the project are two main folders:
+
 Data_Formatting
 * Conversion & standardization of raw data sets
-* Data Preprocessing & Data Engineering
+* Data Preprocessing & feature engineering
+
 Machine_Learning
 * Modeling with evaluations
 * Displaying results
