@@ -173,7 +173,7 @@ Place these files within your working directory:
 To finalize data processing, run: Kaggle_DataProcessing.ipynb
 
 ## Training & Performance Evaluation
-To train the model, run: “Kaggle_Model&Analysis.ipynb”
+To train the model, run: Kaggle_Model&Analysis.ipynb
 
 This will also generate evaluation metrics, producing ROC and precision-recall curves for interpretation through tables and plots. 
 
