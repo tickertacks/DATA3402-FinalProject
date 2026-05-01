@@ -6,7 +6,7 @@ The original inspiration for this project is defined by a pre-existing Kaggle da
 
 This project will similarly retrieve multiple data sources from reputable sources in attempt to understand important features within GSTs. The approach within this repository formulates the problem of predicting GSTs as a binary classification task and predicts whether an event with Kp-index values ≥ 5 will occur within the next 6 hours using time-series features derived from solar wind conditions and adjacent solar activity such as CMEs and solar flares.
 
-Multiple machine learning models (Logistic Regression, Random Forest, and XGBoost) are then trained on engineered hourly features, where temporal dependencies are handled using rolling windows and time-based splits to avoid data leakage. The best-performing model, XGBoost, achieved the strongest ROC-AUC performances (~0.89-0.92), with high recall at lower thresholds, enabling effective detection of storm conditions at the expense of precision.
+Multiple machine learning models (Logistic Regression, Random Forest, and XGBoost) are then trained on engineered hourly features, where temporal dependencies are handled using rolling windows and time-based splits to avoid data leakage. The decided best performing model, XGBoost, achieved strong ROC-AUC performances (~0.89-0.92), with high recall at lower thresholds, enabling effective detection of storm conditions at the expense of precision.
 
 ## Summary of Work Done
 
