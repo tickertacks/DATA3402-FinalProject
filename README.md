@@ -44,7 +44,7 @@ For small, isolated gaps in the data, interpolation was applied to maintain cont
 ### Data Visualization
 ![](XGBoost_vs_ActualKp.png)
 
-Sample interval from May to June for 2025 visualizing actual Kp-indexes with the selected model for the project with threshold values indicating the cutoff for a GST to be confirmed.
+Sample interval from May to June for 2024 visualizing actual Kp-indexes with the selected model for the project with threshold values indicating the cutoff for a GST to be confirmed.
 
 ### Feature Engineering
 Vectorized rolling windows were used to calculate event-based features to improve efficiency in analysis. 72-hour intervals are used to account for the time GST takes to arrive to Earth. Sunspot data is used as a proxy for the Sun’s solar cycle.
