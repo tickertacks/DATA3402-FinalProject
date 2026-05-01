@@ -113,6 +113,12 @@ Metric used include:
 | XGBoost        | 0.3      | 0.895  | 0.19     | 0.86   | 0.31     |
 | XGBoost        | 0.8      | 0.895  | 0.48     | 0.57   | 0.52     |
 
+![](Models_ROC_AUC_YesPersistence.png)
+
+![](Models_ROC_AUC_NoPersistence.png)
+
+The ROC curves show that all models achieve strong discrimination between storm and non-storm conditions, with AUC values around 0.90 or higher. Random Forest achieves the highest AUC, suggesting that nonlinear relationships between features play an important role in storm prediction.
+
 Through the validation set built on the time-split, a decision threshold for predictions was applied to convert probabilities into binary predictions. However, due to the context of GST prediction, multiple thresholds were evaluated to analyze the trade-off between precision and recall, with lower thresholds favoring higher recall and higher thresholds favoring higher precision. Having multiple thresholds allows the model to be adapted for different operational goals in mind.
 
 ![](XGBoost_Thresholds.png)
