@@ -87,7 +87,7 @@ Initially, a loop was used for target computation as well as computation of valu
 Also, although the project includes persistence features for the models to train on, it was uncertain whether the models training off persistence features would analyze the underlying data for GSTs for prediction or instead become a persistence model instead. To account for this, persistence features are explicitly labeled with model performance being evaluated with and without persistence features.
 
 ## Performance Comparison
-Metric used include:
+Metrics used include:
 -	ROC-AUC
 -	Precision
 -	Recall
@@ -117,13 +117,13 @@ Metric used include:
 
 ![](Models_ROC_AUC_NoPersistence.png)
 
-The ROC curves show that all models achieve strong discrimination between storm and non-storm conditions, with AUC values around 0.90 or higher. Random Forest achieves the highest AUC, suggesting that nonlinear relationships between features play an important role in storm prediction.
+The ROC curves show that all models achieve strong discrimination between storm and non-storm conditions, with AUC values around ~0.90 or higher. Random Forest achieves the highest AUC, suggesting that nonlinear relationships between features play an important role in storm prediction.
 
 Through the validation set built on the time-split, a decision threshold for predictions was applied to convert probabilities into binary predictions. However, due to the context of GST prediction, multiple thresholds were evaluated to analyze the trade-off between precision and recall, with lower thresholds favoring higher recall and higher thresholds favoring higher precision. Having multiple thresholds allows the model to be adapted for different operational goals in mind.
 
 ![](XGBoost_Thresholds.png)
 
-All in all, XGBoost achieved the best overall performance. Higher recall is achieved at lower thresholds (~0.30) However, precision remains low due to the class imbalance and borderline geomagnetic activity conditions (Kp-index values of ~4). 
+The results suggest that nonlinear models outperform linear approaches for this task, indicating that geomagnetic storm prediction depends on complex interactions between solar wind and geomagnetic variables. While Random Forest achieved the best overall metrics, XGBoost remained competitive and provided a balanced trade-off between precision and recall across thresholds. Higher recall is achieved at lower thresholds (~0.30). However, precision remains low due to the class imbalance and borderline geomagnetic activity conditions (Kp-index values of ~4). 
 
 ## Conclusions
 ![](XGBoost_Feature_Importance.png)
